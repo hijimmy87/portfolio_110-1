@@ -1,0 +1,12 @@
+.inline * {
+    display: inline-block;
+}
+.inline div {
+    margin-left: 1rem;
+}
+
+.noneA {
+    color: var(--bs-body-color) !important;
+    text-decoration: none;
+    cursor: default;
+}

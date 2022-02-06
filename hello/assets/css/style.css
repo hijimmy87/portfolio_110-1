@@ -1,0 +1,31 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+}
+body {
+    padding-bottom: 80px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#hello {
+    font-size: 20em; text-align:center;
+}
+@media (max-width: 1200px) {
+    #hello {font-size: 10em;}
+}
+@media (max-width: 600px) {
+    #hello {font-size: 5em;}
+}
+@media (max-width: 300px) {
+    #hello {font-size: 2em;}
+}
+
+#ariticle p {
+    text-indent: 2em;
+}

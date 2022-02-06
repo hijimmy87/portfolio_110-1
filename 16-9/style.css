@@ -1,0 +1,43 @@
+html, body {
+    min-height: 100vh; margin: 0;
+    font-family: 'Segoe UI', '微軟正黑體', sans-serif;
+}
+
+.formula {
+    position: relative;
+    display: inline-block;
+    width: 150px; height: 250px; margin: 20px;
+    font-size: 100px; text-align: end;
+}
+.formula * {
+    position: absolute;
+    height: 50%;
+}
+.formula .minuend {
+    width: 110px; top: 0; right: 0;
+}
+.formula .subtrahend {
+    width: 110px; bottom: 0; right: 0;
+}
+.formula .operator {
+    width: 40px; bottom: 0; left: 0;
+}
+.formula .dot, .formula .bar {
+    height: 10px; background-color: black;
+}
+.formula .dot {
+    width: 10px; top: 15px; left: 45%;
+    border-radius: 50%;
+}
+.formula .bar {
+    width: 100%; bottom: -5px;
+}
+
+#caption {
+    width: 100%; height: 75px; margin-top: 25px;
+    font-size: 50px; text-align: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

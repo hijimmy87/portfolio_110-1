@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="uft-8" />
+    <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicons/favicon.svg" />
+    <title>Hello World!</title>
+    <meta name="title"               content="Hello World!" />
+    <meta name="descripttion"        content="Hello!" />
+    <meta property="og:type"         content="object" />
+    <meta property="og:site_name"    content="Hello World!" />
+    <meta property="og:title"        content="Hello World!" />
+    <meta property="og:descripttion" content="Hello!" />
+    <meta property="og:url"          content="https://hello.hijimmy.tk/" />
+    <meta property="og:image"        content="https://github.com/fluidicon.png" />
+    <meta property="og:image:alt"    content="Hello World!" />
+    <meta property="og:imgage:type"  content="image/png" />
+    <meta property="og:image:width"  content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="assets/script/onload.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body onload="aboutOnload();">
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-md">
+            <a class="navbar-brand" href="/">
+                Hello!
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page"  title="沒有這一頁喔">關於</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-md mb-5">
+        <h1 class="h1 text-center" id="hello">Hello</h1>
+        <p>現在時間：<span id="time"></span></p>
+        <h1>簡介</h1>
+        <article>
+            <p>首先，恭喜你順利的進到了這個頁面。</p>
+            <p>當首頁被點擊或是載入後超過三秒，都會從資料庫中隨機選擇一個網址，並自動導向過去。不過在這裡不用擔心，只有當你點擊時才會觸發，所以你有足夠的時間可以閱覽此頁，不過距離你進入此頁面，已經過了<span id="time-past"></span>秒。另外首頁的文章也是隨機從資料庫讀取一篇的，除了幾篇短文以外，其他皆是由文章由<a href="https://gadget.chienwen.net/x/text/garbagearticle" target="_blank" title="廢文生產器">好用工具箱</a>提供。沒記錯的話，每篇應該是4000字左右，祝你可以順利的達成在3秒鐘內將它閱讀完畢。假如你成功了的話，恭喜你！<s>你已經省去學習量子速讀的學費了！</s></p>
+            <p>本網站藉由 <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE">MIT 授權</a>使用<a href="https://getbootstrap.com/">Bootstrap</a>所提供之主題。</p>
+        </article>
+    </main>
+    <footer>
+        <div class="container-md py-4 border-top">
+            <div class="row justify-content-between">
+                <div class="col col-6">
+                    <p>
+                        &copy; 2021 Jimmy.
+                    </p>
+                </div>
+                <div class="col col-1">
+                    <p><a href="#" title="回到最上面">TOP</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
